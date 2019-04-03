@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	position: relative;
+}
+#top{
+	margin: 0 auto;
+	position: relative;
+}
+#top_b{
+	position: absolute;
+	top: 30px;
+	font-size: 35px;
+	color: #E8B916;
+}
+#top_s{
+	position: absolute;
+	top: 80px;
+	left: 170px;
+	color: #a59f9f;
+}
+#top_s1{
+	position: absolute;
+	top: 70px;
+	left: 325px;
+	font-size: 25px;
+	color: #6d6d6d;
+}
+		#container img{
+			width: 100%;
+			height: 800px;
+			position: absolute;
+			z-index: -2;
+			}
+		div.black{
+			width: 560px;
+			height: 450px;
+			margin-top:11%;
+			background-color: rgba(0,0,0,0.3);
+			border-radius: 2%;
+		}
+		div.black table{
+			width: 100%;
+		}
+		div.black table tr th{
+			color:#FFFFFF;
+		}
+		#login{
+			color: #FFFFFF;
+			font-size: 15px;
+			text-decoration: none;
+			
+			text-align: right;
+		}
+		.black table tr td{
+			color:#FFFFFF;
+			text-align: right;
+		}
+		.black table tr td input{
+			width: 222px;
+			height: 35px;
+			border: 0;outline: none;
+			margin:15px 0px;
+			padding-left:7px ;
+			box-sizing: border-box;
+		}
+		#zc{
+			display: block;
+			height: 35px;width: 100%;
+			margin-top: 15px;
+			background: #32a2da;
+			border: 0;outline: none;
+			color: #FFFFFF;
+			text-align: center;
+			line-height: 35px;
+			text-decoration: none;
+		}
+		.black table tr td span{
+			display: block;
+			width: 160px;
+			height: 20px;
+			text-align: center;
+			line-height: 20px;
+			font-size: 15px;
+			border-radius: 4%;
+		}
+/*媒体查询   自适应*/
+@media screen and (min-width:1250px){
+	/*标题宽度*/
+#top{
+	width:  1200px;}
+/*注册表单的位置*/
+div.black{
+	margin-left: 48%;
+}
+}
+@media screen and (max-width:1249px) and (min-width:997px){
+	/*标题宽度*/
+#top{
+	width:  900px;}
+	/*注册表单的位置*/
+div.black{
+	margin-left: 42%;
+}
+}
+@media screen and (max-width:996px){
+	/*标题宽度*/
+#top{
+	width:  800px;}
+	/*注册表单的位置*/
+div.black{
+	margin-left: 30%;
+}
+}

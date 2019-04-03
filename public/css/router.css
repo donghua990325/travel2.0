@@ -1,0 +1,205 @@
+*, *:after, *:before { border-box; box-sizing: border-box; margin:0; padding:0;}
+/*主要内容的范围*/
+#main1{
+	margin: 0 auto;
+}
+/*所有路线的分布*/
+.tabs{
+	background:#b2b2b254;
+	width: 100%;
+	height: 50px;
+}
+.tabs>ul{
+	height: 50px;
+	margin: 0 auto;
+	
+}
+.tabs li{
+	float: left;
+	list-style: none;
+}
+/*路线的位置分布*/
+
+/*li中a标签 的样式*/
+.tabs li a{
+	line-height: 50px;
+	text-align: center;
+	width: 130px;
+	height: 50px;
+  	display:inline-block;
+  	text-decoration:none;
+  	color:#3a3939;
+}
+/*每个路线的伪类,状态*/
+.tabs li a:hover{
+	color: #fff;
+	background: #E8B916;
+}
+.ac{
+	background: #E8B916;
+	color: #fff !important;
+}
+/*点击那个新闻就显示那个内容*/
+#container{
+	position: relative;
+}
+#content1,#content2,#content3,#content4,#content5{
+	position: absolute;
+}
+table tr td:nth-child(4){
+	margin-right: 0px;
+}
+/*表格中对应的图片样式*/
+table{
+	background: #fffffb;
+	margin-top: 65px;
+}
+table tr td{
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+	width: 264px;
+	height: 180px;
+	overflow: hidden;
+}
+table tr td img{
+	display: block;
+	opacity: 0.8;
+}
+table tr td div{
+	padding: 35px;
+	color: #fff;
+	font-size: 12px;
+}
+table tr td div::before,table tr td div::after{
+	pointer-events: none;
+}
+table tr td div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+table tr td{
+	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+}
+table tr td img{
+	opacity: 0.9;
+	transition: opacity 0.55s;
+}
+table tr td div{
+	padding: 30px;
+	background-color: rgba(112,110,105,0.7);
+	transition: background-color 0.55s;
+}
+table tr td div::before{
+	position: absolute;
+	top: 35px;
+	right: 35px;
+	left: 35px;
+	bottom: 35px;
+	border: 1px solid #fff;
+	content: '';
+}
+table tr td div h2{
+	margin:10% 0 10px 0;
+	transition: transition 0.35s;
+	transform: translate3d(0,100%,0);
+}
+table tr td div::before,table tr td p,table tr td a{
+	opacity: 0;
+	transition: opacity 0.35s;
+	transform: scale(0);
+}
+table tr td :hover h2{
+	transform: translate3d(0,0,0);
+}
+table tr td:hover div::before,table tr td :hover p,table tr td :hover a{
+	opacity: 1;
+	transform: scale(1);
+}
+table tr td:hover .fig{
+	background-color:rgba(58,52,42,0) ;
+}
+table tr td:hover img{
+	opacity: 0.4;
+}
+.body{
+	position: relative;
+}
+/*添加背景图片*/
+.bg{
+	width: 100%;
+	height: 100%;
+	background: url(img/bg1.jpg);
+	opacity: 0.1;
+	position:absolute;
+	z-index: -2;
+	top: 0;
+}
+/*媒体查询   自适应*/
+@media screen and (min-width:1250px){
+	/*每个路线上导航栏上边的宽度*/
+	.tabs>ul{
+	width: 1000px;}
+	/*具体景点的间距*/
+	table tr td{
+	margin-top: 10px;
+	margin-right:10px;}
+	/*旅行预约*/
+	.right1{
+	position: absolute;
+	left: 80%;
+	}
+	/*具体内容的宽度*/
+	#main1{
+		width: 1100px;
+		height: 765px;
+		}
+
+}
+@media screen and (max-width:1249px) and (min-width:997px){
+	/*每个路线上导航栏上边的宽度*/
+	.tabs>ul{
+	width: 900px;}
+	/*旅行预约*/
+	.right1{
+	position: absolute;
+	left: 80%;}
+	/*具体景点的间距*/
+	table tr td{
+	margin-top: 15px;
+	margin-right:85px;
+	margin-left: 115px;}
+	
+	/*具体内容的宽度*/
+	#main1{
+		width: 980px;
+		height: 1260px;
+		}
+	}
+@media screen and (max-width:996px){
+	/*每个路线上导航栏上边的宽度*/
+	.tabs>ul{
+	width: 900px;}
+	/*旅行预约*/
+	.right1{
+	position: absolute;
+	left: 75%;}
+	/*具体景点的间距*/
+	table tr td{
+	margin-top: 15px;
+	margin-left: 115px;}
+	
+	/*具体内容的宽度*/
+	#main1{
+		width: 902px;
+		height: 1260px;
+		}
+	
+}

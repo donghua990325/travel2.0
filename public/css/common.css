@@ -1,0 +1,210 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*下拉菜单样式*/
+/*下拉菜单的所有a样式*/
+.dropdown a{
+	text-decoration: none;
+	display: inline-block;
+}
+/*鼠标触及显示的样式*/
+.dropdown-menu{
+	width: 90px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+	position: relative;
+	left: 5px;
+	z-index: 10;
+	background: rgba(0,0,0,0.2);
+}
+.dropdown-menu a{
+	padding: 6px 9px;
+	width: 90px;
+	
+}
+.dropdown-menu li:hover{
+	background: #E8B916;
+}
+/*客服*/
+.kefu{
+	position: fixed;
+	top: 50%;
+	z-index: 1000;
+}
+#kefu{
+	width: 60px;
+	height: 60px;
+	background: #E8B916;
+	color: #fff;
+	line-height: 60px;
+	text-align: center;
+	border-radius: 5px;
+}
+#waiter{
+	width: 120px;
+	height: 160px;
+	position: absolute;
+	border-radius: 5px;
+	top: -40px;
+	left: -145px;
+	text-align: center;
+	background: #e6e6e6;
+}
+#waiter::before{
+	width: 30px;
+	height: 30px;
+	transform: rotateZ(45deg);
+	content: '';
+	position: absolute;
+	top: 63px;
+	left: 105px;
+	background: #e6e6e6;
+}
+#waiter ul{
+	padding-top: 35px;
+}
+#waiter ul li{
+	line-height: 40px;
+	background: #e6e6e6;
+	list-style: none;
+}
+#waiter ul li:hover{
+	background: #E8B916;
+}
+#waiter ul li a:hover{
+	color: #fff;
+}
+#waiter ul li a{
+	color: #000;
+	text-decoration: none;
+}
+#waiter ul img{
+	width: 30px;
+}
+.kefu:hover{
+	left:120px;
+}
+/*返回顶层*/
+#top1{
+	width: 60px;
+	height: 60px;
+	background: rgba(0,0,0,0.2);
+	position: fixed;
+	right: 60px;
+	bottom: 20px;
+	text-align: center;
+	line-height: 60px;
+	font-size: 32px;
+	z-index: 1000;
+}
+#top1 a{
+	text-decoration: none;
+	color: #fff;
+}
+/*banner框*/
+.banners{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	height: 350px;
+}
+.banner_box{
+	overflow: hidden;
+}
+.banner{
+	width: 100%;
+	height: 410px;
+	position: absolute;
+	top: -120px;
+	}
+	/*轮播大大小*/
+.banner-slide{
+	width: 100%;
+	height: 410px;
+	position: absolute;
+}
+/*固定行*/
+.nav{
+	width: 100%;
+	height: 105px;
+	position: fixed;
+	top:0px;
+	z-index: 100;
+	background: rgba(0,0,0,0.2);
+}
+/*logo*/
+.dh_left{
+	width: 300px;
+	position: relative;
+}
+/*logo旁边标题*/
+.title{
+	position: relative;
+	top: -20px;
+	display: inline-block;
+}
+.title b{
+	color:#e8b916;
+	font-size: 24px;
+}
+.title span{
+	color: #efecec;
+}
+
+.u{
+	list-style: none;
+	position: relative;
+	top: -63px;
+}
+.right{
+	float: left;
+	text-align: center;
+}
+.dh_right ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+}
+/*尾部部分*/
+.foot_logo{
+	display: block;
+	width: 435px;
+	margin: 0px auto;
+}
+footer{
+	background-color: #424a4f;
+	width: 100%;
+	height: 210px;
+	position: relative;
+	top: 50px;
+}
+#foot{
+	margin-top:-90px ;
+	position: relative;
+	z-index: 5px;
+	top: 55px;
+}
+#foot_dh{
+	/*position: absolute;*/
+}
+#foot_dh ul{
+	width: 620px;
+	height: 5px;
+	margin: 40px auto;
+	list-style: none;
+}
+#foot_dh ul li{
+	width: 100px;
+	float: left;
+	text-align: center;
+}
+#foot_z1,#foot_z2{
+	text-align:center;
+	line-height: center;
+}
+.foot_font{
+	color:#fff;
+}

@@ -1,0 +1,106 @@
+*{margin:0;padding:0;}
+.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+.iw_poi_content 
+{font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+.box{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	margin: 0 auto;
+}
+
+.con{
+	padding-top: 125px;
+	padding-bottom: 125px;
+	padding-left: 20px;
+}
+.con ul{
+	list-style: none;
+}
+/*关于我们标题表头*/
+#con_title{
+	margin:25px 0;
+	text-align: center;
+}
+#con_title h2{
+	color: #E8B916;
+}
+#con_title p{
+	margin-top:10px ;
+	color: #6f7172;
+	font-size: 12px;
+}
+/**/
+#pic2{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+
+/*图片走马灯的样式*/
+#pic2 a{
+	text-align: center;
+	 color: #000;
+	 text-decoration: none;
+}
+#pic2 a:hover{
+	color: #E8B916;
+}
+        #pic2 img{
+            float:left;
+            /*height:100px;*/
+            /*width:150px;*/
+			padding-left:10px;		
+        }
+        #pic1{
+            height:200px;
+            overflow: hidden;
+            /*border:1px solid #000;*/
+            margin: 25px auto;
+            padding-bottom:70px;
+        }
+        #pic2,#pic3{
+            float:left;
+        }
+        #pic4{
+            width:500%;/*这个属性很重要 让容器有足够的宽度实现滚动*/
+            float:left;
+			margin-top:25px;
+        }
+/*媒体查询   自适应*/
+@media screen and (min-width:1250px){
+	/*地图的内容+旁边的信息*/
+	.box{
+	width: 1000px;}
+	/*地图的大小*/
+	#dituContent {
+    width: 564px;
+    height: 464px;}
+    /*走马灯的宽度*/
+    #pic1{
+            width:1000px;}
+}
+@media screen and (max-width:1249px) and (min-width:997px){
+	/*地图的内容+旁边的信息*/
+	.box{
+	width: 900px;}
+	/*地图的大小*/
+	#dituContent {
+    width: 564px;
+    height: 464px;}
+    /*走马灯的宽度*/
+    #pic1{
+            width:900px;}
+}
+@media screen and (max-width:996px){
+	/*地图的内容+旁边的信息*/
+	.box{
+	width: 890px;}
+	/*地图的大小*/
+	#dituContent {
+    width: 564px;
+    height: 464px;}
+    /*走马灯的宽度*/
+    #pic1{
+            width:890px;}
+}

@@ -1,0 +1,79 @@
+/*>=992px*/
+@media screen and (min-width:1250px){
+	/*顶部登录,注册*/
+	.head_left{
+		margin-left: 15%;
+	}
+	
+	.head_right{
+		margin-right: 20%;
+	}
+	/*logo*/
+	.dh_left{
+		left:15%;
+	}
+	/*固定导航*/
+	.dh_right>ul li{
+		width: 8%;
+	}
+	.dh_right>ul{
+	left: 40%;
+	}
+	/*banner上面的主题,输入框*/
+	.banner_fontz{
+		top: 40%;
+		left: 20%;
+	}
+}
+/*<=1249 >=997 */
+@media screen and (max-width:1249px) and (min-width:997px){
+	/*顶部登录,注册*/
+	.head_left{
+		margin-left: 5%;
+	}
+	.head_right{
+		margin-right: 5%;
+	}
+	/*logo*/
+	.dh_left{
+		left:5%;
+	}
+	/*固定导航 各个间距*/
+	.dh_right>ul li{
+		width: 8%;
+	}
+	/*固定导航整体间距*/
+	.dh_right>ul{
+	left: 45%;
+	}
+	/*banner上面的主题,输入框*/
+	.banner_fontz{
+		top: 40%;
+		left: 3%;
+	}
+}
+/**/
+@media screen and (max-width:996px){
+	/*logo位置*/
+	
+	/*固定导航 各个间距*/
+	.dh_right>ul li{
+		width: 10%;
+	}
+	/*固定导航整体间距*/
+	.dh_right>ul{
+	left: 30%;
+	}
+	.banner_box{
+		top: 180px;
+	}
+	/*banner上面的主题,输入框*/
+	.banner_fontz{
+		top: 40%;
+		left: 1%;
+	}
+}
+
+
+
+

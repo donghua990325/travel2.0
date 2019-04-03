@@ -1,0 +1,29 @@
+{
+  "name": "travel2.0",
+  "version": "1.0.0",
+  "description": "travel",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donghua990325/travel2.0.git"
+  },
+  "keywords": [
+    "travel"
+  ],
+  "author": "cdh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/donghua990325/travel2.0/issues"
+  },
+  "homepage": "https://github.com/donghua990325/travel2.0#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}

@@ -1,0 +1,216 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+/*预约表单*/
+.yuyue_tab{
+	margin: 10px auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+/*预约标题表头*/
+.yuyue_tab thead{
+	text-align: center;
+}
+.yuyue_tab thead tr:nth-child(1) td{
+	font-weight: bold;
+	color: #E8B916;
+	font-size: 20px;
+}
+.yuyue_tab thead tr:nth-child(2) td{
+	margin-top:10px ;
+	color: #6f7172;
+}
+/*表单第一列样式*/
+.yuyue_tab tbody tr td:nth-child(1) div{
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 24px;
+	/*padding-left: 10px;*/
+	margin: 15px 15px;
+}
+/*第一列每个边框的样式*/
+.yuyue_tab tbody tr:nth-child(1) td:nth-child(1){
+	border-radius: 50%;
+	border:2px dashed #b6b5b5;
+	border-top-color: #E8B916;
+}
+.yuyue_tab tbody tr:nth-child(2) td:nth-child(1){
+	border-radius: 50%;
+	border:2px dashed #b6b5b5;
+	border-top-color: #E8B916;
+	border-left-color: #E8B916;
+}
+.yuyue_tab tbody tr:nth-child(3) td:nth-child(1){
+	border-radius: 50%;
+	border:2px dashed #b6b5b5;
+	border-top-color: #E8B916;
+	border-left-color: #E8B916;
+	border-bottom-color:#E8B916 ;
+}
+.yuyue_tab tbody tr:nth-child(4) td:nth-child(1){
+	border-radius: 50%;
+	border:2px dashed #b6b5b5;
+	border-top-color: #E8B916;
+	border-left-color: #E8B916;
+	border-bottom-color:#E8B916 ;
+}
+.yuyue_tab tbody tr:nth-child(5) td:nth-child(1){
+	border-radius: 50%;
+	border:2px dashed #E8B916;
+}
+/*表单第二列样式*/
+.yuyue_tab tbody tr td:nth-child(2){
+	width: 500px;
+}
+.yuyue_tab tbody tr td h4{
+	color: #E8B916;
+	margin-bottom: 12px;
+}
+.yuyue_tab tbody tr td p{
+	color: #b6b5b5;
+	font-size: 14px;
+}
+/*表单第三列*/
+.span_1{
+	font-size: 14px;
+}
+.span_2{
+	color: #f10;
+}
+.yuyue_tab tr td input{
+	width: 338px;
+	height: 45px;
+	padding-left: 5px;
+}
+/*表单第四列*/
+.yuyue_tab tbody tr td:last-child{
+	width: 163px;
+}
+#liuyan{
+	width: 338px;
+	height: 100px;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+.yuyue_tab tbody tr:last-child td:last-child div{
+	margin:10px auto;
+	width: 420px;
+	height: 42px;
+	overflow: hidden;
+	position: relative;
+}
+.yuyue_tab tbody tr a{
+	display: block;
+	text-align: center;
+	border: 1px solid #E8B916;
+	color: #000000;
+	line-height: 40px;
+	text-decoration: none;
+	position: relative;
+	cursor: pointer;
+	transition:all .7s ease-in-out;
+}
+/*提交按钮特效*/
+#tijiao:hover{
+	color: #fff;
+}
+#tijiao:after{
+	display: block;
+	content: "";
+	position: relative;
+	bottom: 0px;
+	width: 420px;
+	height: 40px;
+	z-index: -2;
+	background: #E8B916;
+	transition:all .4s ease-in-out;
+}
+#div_2:hover #tijiao:after{
+	bottom: 40px;
+}
+/*表单验证*/
+.vali_info{
+	display: none;
+}
+.txt_focus{
+	border-top:2px solid #E8B916;
+	border-left:2px solid #E8B916;
+}
+/*验证是否正确出现的效果*/
+.vali_success,.vali_fail{
+	background-repeat:no-repeat;
+  background-position:left center;
+	display:block;
+
+}
+.vali_success{
+ background-image:url("../img/yes.jpg");
+	padding-left:20px;
+	width:0px;height:20px;
+	overflow:hidden;
+	background-size: 20px;
+}
+.vali_fail{
+ background-image:url('../img/no.jpg');
+    color:Red;
+    background-size: 30px;
+    padding-left:30px;
+}
+/*弹出框*/
+.alert{
+	border:5px dashed #E8B916;
+	color:#000;
+	background:#fff;
+	padding:10px;
+	position: fixed;
+	z-index:100;
+	text-align: center;
+	/*line-height: 120px;*/
+}
+.alert>.close{
+	float:right;
+	font-weight:bold;
+	opacity:.5;
+	cursor:pointer;
+}
+.close+p{
+	padding-top: 30px;
+	line-height: 30px;
+}
+.alert>.close:hover{opacity:1}
+.fade{ /*定义淡入淡出动画的初始状态,常驻元素*/
+	width: 270px;height: 70px;
+	top:50%;left:50%;
+	margin-left:-140px;
+	margin-top:-100px;
+	opacity:0;
+	transition:all .5s linear;
+}
+.in{ /*定义淡入淡出动画的结束状态*/
+	width:350px; height:120px;
+	top:50%; left:50%;
+	margin-left:-160px;
+	margin-top:-60px;
+	opacity:1;
+}
+/*媒体查询   自适应*/
+@media screen and (min-width:1250px){
+	/*预约表单*/
+.yuyue_tab{
+	width: 1200px;}
+}
+@media screen and (max-width:1249px) and (min-width:997px){
+	/*预约表单*/
+.yuyue_tab{
+	width: 900px;}
+	
+}
+@media screen and (max-width:996px){
+	/*预约表单*/
+.yuyue_tab{
+	width: 900px;}
+}
