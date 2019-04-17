@@ -1,7 +1,7 @@
 (function(){
     //后台景点列表
     $.ajax({
-        url:"http://127.0.0.1:3000/router/page",
+        url:"router/page",
         type:"get",
         dataType:"json"
     })
@@ -23,7 +23,7 @@
         })
      //后台添加用户列表
      $.ajax({
-        url:"http://127.0.0.1:3000/user/list",
+        url:"user/list",
         type:"get",
         dataType:"json"
     })

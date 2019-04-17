@@ -253,7 +253,7 @@
 		</table>
 		</form>
 		<!--弹出框-->
-		<div class="alert fade" id="sucess" style="border: 1px solid # #000000;">
+		<div class="alert fade" id="sucess" style="border: 1px solid  #000000;">
 		<p class="close">×</p>
 		<p>提交成功,我们的工作人员会按照您的要求合理安排,祝您旅行愉快!</p>
 	</div>	
@@ -313,7 +313,7 @@ console.log(close)
 						
 					}
 				}
-				xhr.open('post','http://127.0.0.1:3000/yuyue/kehu',true);
+				xhr.open('post','yuyue/kehu',true);
 				var formdata="yname="+yname.value+"&phone="+phone.value+"&time="+time.value+"&tourist_location="+tourist_location.value+"&num="+num.value+"&remark="+remark.value;
 				xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
 				xhr.send(formdata); 

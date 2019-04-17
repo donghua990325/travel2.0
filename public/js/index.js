@@ -1,7 +1,7 @@
 (function(){
 	//精选路线发送请求
 	$.ajax({
-		url:"http://127.0.0.1:3000/index/wall",
+		url:"index/wall",
 		type:"get",
 		dataType:"json"
 	})
@@ -33,7 +33,7 @@
 	})
 	//首页中热门景点
 	$.ajax({
-		url:"http://127.0.0.1:3000/index/route",
+		url:"index/route",
 		type:"get",
 		dataType:"json"
 	})
@@ -75,7 +75,7 @@
 	
 	//新闻文字轮播
 	$.ajax({
-		url:"http://127.0.0.1:3000/index/news",
+		url:"index/news",
 		type:"get",
 		dataType:"json"
 	})
@@ -94,7 +94,7 @@
 	})		
 	//新闻图片轮播
 	$.ajax({
-		url:"http://127.0.0.1:3000/index/newspic",
+		url:"index/newspic",
 		type:"get",
 		dataType:"json"
 	})
@@ -110,7 +110,7 @@
 	})
 	//首页图片轮播
 	$.ajax({
-		url:"http://127.0.0.1:3000/index/pic",
+		url:"index/pic",
 		type:"get",
 		dataType:"json"
 	})

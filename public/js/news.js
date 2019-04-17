@@ -2,7 +2,7 @@
 	//发送请求
 	$.ajax({
 		type:"get",
-		url:"http://localhost:3000/news",
+		url:"news",
 		dataType:"json"
 	})
 	.then(function(result){

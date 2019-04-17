@@ -1,7 +1,7 @@
 (function(){
 	//首页图片轮播
 	$.ajax({
-		url:"http://127.0.0.1:3000/index/pic",
+		url:"index/pic",
 		type:"get",
 		dataType:"json"
 	})
