@@ -14,9 +14,7 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	display: none;
 	position: relative;
-	left: -10%;
 	z-index: 10;
 	background: rgba(0,0,0,0.2);
 }
@@ -577,6 +575,10 @@
 	/*下部新闻部分*/
 	#new ul{
 		width: 450px;}
+		/*导航栏下面的二级导航*/
+	.dropdown-menu{
+		left: 15%;
+	}
 	}
 /*<=1249 >=997 */
 @media screen and (max-width:1249px) and (min-width:997px){
@@ -621,6 +623,10 @@
 		position: relative;
 		left: 30%;
 	}
+	/*导航栏下面的二级导航*/
+	.dropdown-menu{
+		left: -10%;
+	}
 }
 /**/
 @media screen and (max-width:996px){
@@ -657,5 +663,9 @@
 	.foot_logo{
 		position: relative;
 		left: 30%;
+	}
+	/*导航栏下面的二级导航*/
+	.dropdown-menu{
+		left: -15%;
 	}
 }

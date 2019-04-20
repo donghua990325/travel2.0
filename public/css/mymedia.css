@@ -24,6 +24,10 @@
 		top: 40%;
 		left: 20%;
 	}
+	/*导航栏下面的二级导航*/
+	.dropdown-menu{
+		left: 15%;
+	}
 }
 /*<=1249 >=997 */
 @media screen and (max-width:1249px) and (min-width:997px){
@@ -51,6 +55,10 @@
 		top: 40%;
 		left: 3%;
 	}
+	/*导航栏下面的二级导航*/
+	.dropdown-menu{
+		left: -10%;
+	}
 }
 /**/
 @media screen and (max-width:996px){
@@ -71,6 +79,10 @@
 	.banner_fontz{
 		top: 40%;
 		left: 1%;
+	}
+	/*导航栏下面的二级导航*/
+	.dropdown-menu{
+		left: -15%;
 	}
 }
 
